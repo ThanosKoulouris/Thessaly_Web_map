@@ -373,21 +373,21 @@ const layerDefinitions = {
   popdens: {
     sourceId: 'popdens-src',                       // Internal ID for the data source
     layerId: 'popdens-layer',                      // Internal ID for the map layer
-    url: 'https://github.com/ThanosKoulouris/Thessaly_Web_map/blob/main/data/dimoi_pop_dens_wgs84.geojson',        // 🌍 Path to your file
+    url: 'data/dimoi_pop_dens_wgs84.geojson',        // 🌍 Path to your file
     dataField: 'DENSITY'                           // 🌍 Column name in your GeoJSON
   },
   // Dasymmetric map layer (population density by land cover zone)
   denscover: {
     sourceId: 'denscover-src',
     layerId: 'denscover-layer',
-    url: 'https://github.com/ThanosKoulouris/Thessaly_Web_map/blob/main/data/dimoi_pop_dens_cover_wgs84.geojson',  // 🌍 Path to your file
+    url: 'data/dimoi_pop_dens_cover_wgs84.geojson',  // 🌍 Path to your file
     dataField: 'DENSITY_CO'                        // 🌍 Column name in your GeoJSON
   },
   // Proportional symbols layer (circles sized by population)
   poipop: {
     sourceId: 'poipop-src',
     layerId: 'poipop-layer',
-    url: 'https://github.com/ThanosKoulouris/Thessaly_Web_map/blob/main/data/dimoi_pop_oik_katast_wgs84.geojson',        // 🌍 Path to your file
+    url: 'data/dimoi_pop_oik_katast_wgs84.geojson',        // 🌍 Path to your file
     dataField: 'POPMUN',                           // 🌍 Column name in your GeoJSON
     maxValueApprox: 164095                         // 🌍 Set the maximum population value (for scaling circles)
   },
@@ -395,19 +395,19 @@ const layerDefinitions = {
   contours: {
     sourceId: 'contours-src',
     layerId: 'contours-layer',
-    url: 'https://github.com/ThanosKoulouris/Thessaly_Web_map/blob/main/data/contours_200000_wgs84.geojson'     // 🌍 Path to your file
+    url: 'data/contours_200000_wgs84.geojson'     // 🌍 Path to your file
   },
   // Dot density layer (each dot represents X people)
   dots: {
     sourceId: 'dots-src',
     layerId: 'dots-layer',
-    url: 'https://github.com/ThanosKoulouris/Thessaly_Web_map/blob/main/data/dots_500_wgs84.geojson'          // 🌍 Path to your file
+    url: 'data/dots_500_wgs84.geojson'          // 🌍 Path to your file
   },
   // Boundaries layer (municipal borders)
   boundaries: {
     sourceId: 'boundaries-src',
     layerId: 'boundaries-layer',
-    url: 'https://github.com/ThanosKoulouris/Thessaly_Web_map/blob/main/data/dimoi_oria_wgs84.geojson'            // 🌍 Path to your file
+    url: 'data/dimoi_oria_wgs84.geojson'            // 🌍 Path to your file
   }
 };
 
@@ -1701,6 +1701,7 @@ console.log(layerDefinitions);
 -->
 </body>
 </html>
+
 
 
 
