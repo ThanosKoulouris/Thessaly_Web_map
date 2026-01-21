@@ -213,7 +213,7 @@
     
     <!-- 🌍 Author and institution information -->
     <div class="legend-author">
-       <strong>Πηγή δεδομένων:</strong> Ελληνική Στατιστική Αρχή (ΕΛΣΤΑΤ) - Απογραφές 1991-2021<br>
+      <strong>Πηγή δεδομένων:</strong> Ελληνική Στατιστική Αρχή (ΕΛΣΤΑΤ) - Απογραφές 1991-2021<br>
       <strong>Χαρτοσύνθεση:</strong> Αθανάσιος - Δημήτριος Κουλούρης<br> <!-- 🌍 Author name and surname -->
 	  <strong>ΑΜ:</strong> rs21041<br> <!-- 🌍 Author ID -->
       Εθνικό Μετσόβιο Πολυτεχνείο (ΕΜΠ)<br>
@@ -714,7 +714,7 @@
         //   - Blue: 'rgba(0, 0, 255, 1)'
         //   - Green: 'rgba(0, 255, 0, 1)'
         //   - Purple: 'rgba(128, 0, 128, 1)'
-        'circle-color': 'rgba(170,0,0,0.5)',  // 🌍 Red circles
+        'circle-color': '#d20000',  // 🌍 Red circles
         
         'circle-opacity': opacity,              // Transparency (controlled by slider)
         
@@ -949,19 +949,19 @@
     
     svg.innerHTML = `
       <!-- 🌍 Largest circle (120,000) - drawn FIRST so it appears in BACK -->
-      <circle cx="${centerX}" cy="${cy4}" r="${r4}" fill="none" stroke="rgba(170,0,0,1)" stroke-width="1.5"/>
+      <circle cx="${centerX}" cy="${cy4}" r="${r4}" fill="none" stroke="#d20000" stroke-width="1.5"/>
       <text x="${centerX}" y="${cy4 - r4 - 5}" text-anchor="middle" font-size="11" fill="#333">${label4}</text>
       
       <!-- 🌍 Large circle (60,000) -->
-      <circle cx="${centerX}" cy="${cy3}" r="${r3}" fill="none" stroke="rgba(170,0,0,1)" stroke-width="1.5"/>
+      <circle cx="${centerX}" cy="${cy3}" r="${r3}" fill="none" stroke="#d20000" stroke-width="1.5"/>
       <text x="${centerX}" y="${cy3 - r3 - 5}" text-anchor="middle" font-size="11" fill="#333">${label3}</text>
       
       <!-- 🌍 Medium circle (10,000) -->
-      <circle cx="${centerX}" cy="${cy2}" r="${r2}" fill="none" stroke="rgba(170,0,0,1)" stroke-width="1.5"/>
+      <circle cx="${centerX}" cy="${cy2}" r="${r2}" fill="none" stroke="#d20000" stroke-width="1.5"/>
       <text x="${centerX}" y="${cy2 - r2 - 5}" text-anchor="middle" font-size="11" fill="#333">${label2}</text>
       
       <!-- 🌍 Smallest circle (3,000) - drawn LAST so it appears in FRONT -->
-      <circle cx="${centerX}" cy="${cy1}" r="${r1}" fill="none" stroke="rgba(170,0,0,1)" stroke-width="1.5"/>
+      <circle cx="${centerX}" cy="${cy1}" r="${r1}" fill="none" stroke="#d20000" stroke-width="1.5"/>
       <text x="${centerX}" y="${cy1 - r1 - 5}" text-anchor="middle" font-size="11" fill="#333">${label1}</text>
     `;
     
@@ -1275,5 +1275,6 @@
 -->
 </body>
 </html>
+
 
 
