@@ -1091,7 +1091,7 @@ function updateLegend() {
     const colors = layerDefinitions.popdens.colors;
     
     // 🗺️ Change "Choropleth map (people / km²)" to your preferred legend title
-    html += `<div class="legend-title">Choropleth map (people / km²)</div>`;
+    html += `<div class="legend-title">Χωροπληθής χάρτης (κάτοικοι/ km²)</div>`;
     html += `<div class="legend-row"><div class="legend-color" style="background:${colors[0]}"></div><div>&lt; ${breaks[0]}</div></div>`;
     
     for (let i=0; i<breaks.length-1; i++){
@@ -1108,7 +1108,7 @@ function updateLegend() {
     const colors = layerDefinitions.denscover.colors;
     
     // 🗺️ Change "Dasymmetric map (people / km² by land cover zone)" to your preferred legend title
-    html += `<div class="legend-title">Dasymmetric map (people / km² by land cover zone)</div>`;
+    html += `<div class="legend-title">Δασυμετρικός χάρτης (κάτοικοι / km² ανά ζώνη χρήσης γης)</div>`;
     html += `<div class="legend-row"><div class="legend-color" style="background:${colors[0]}"></div><div>&lt; ${breaks[0]}</div></div>`;
     
     for (let i=0; i<breaks.length-1; i++){
@@ -1701,6 +1701,7 @@ console.log(layerDefinitions);
 -->
 </body>
 </html>
+
 
 
 
